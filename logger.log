@@ -1,0 +1,6 @@
+2022-11-08 00:04:14 INFO  Factorydesign_logger:18 - --info--
+2022-11-08 00:04:14 WARN  Factorydesign_logger:19 - --warn--
+2022-11-08 00:04:14 FATAL Factorydesign_logger:20 - ---fatal---
+2022-11-08 00:04:16 INFO  Factorydesign_logger:18 - --info--
+2022-11-08 00:04:16 WARN  Factorydesign_logger:19 - --warn--
+2022-11-08 00:04:16 FATAL Factorydesign_logger:20 - ---fatal---

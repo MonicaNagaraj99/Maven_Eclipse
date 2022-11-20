@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <parameter name = "filename" value = "Monica"/>
+    <parameter name = "lastname" value = "Nagaraj"/>
+     <parameter name = "address" value = "ABC Colony, Park Road"/>
+      <parameter name = "cc_Num" value = "0987654321123456"/>
+  <groups> 
+  <define name = "Browser">
+    <include name = "browser"></include>
+	<include name = "url"></include>
+	<include name = "quit"></include>
+	   </define>
+	     <define name = "HotelSearch">
+	        <include name = "login"></include>
+	    <include name = "hotel"></include>
+		<include name = "search"></include>
+		<include name = "select"></include>
+	</define>
+	  <define name = "Booking">
+	    <include name = "data"></include>
+		<include name = "card"></include>
+		<include name = "book"></include>
+		<include name = "ss"></include>
+		<include name = "exception"></include>
+		<include name = "alert"></include>
+	</define>
+	<run>
+	    <include name = "Browser"></include>	
+	        <include name = "HotelSearch"></include>
+	            <include name = "Booking"></include>
+	</run>
+	</groups>
+    <classes>
+      <class name="testNG.Adactin_TestNG"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
